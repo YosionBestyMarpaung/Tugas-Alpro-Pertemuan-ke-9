@@ -62,3 +62,41 @@ elif crust_pizza == 5:
     crust_pizza = "Crown Crust"
     total_harga = 55_455
 
+# Meminta ukuran pizza
+print("Pilih ukuran pizza:")
+print("1. Personal")
+print("2. Medium")
+print("3. Large")
+size_choice = int(input("Pilih nomor ukuran pizza yang diinginkan: "))
+
+# Memeriksa pilihan ukuran pizza
+if size_choice == 1:
+    size = "Personal"
+    harga_size = 0
+    total_harga += 0
+elif size_choice == 2:
+    size = "Medium"
+    harga_size = 57_273
+    total_harga += 57_273
+elif size_choice == 3:
+    size = "Large"
+    harga_size = 89_091
+    total_harga += 89_091
+else:
+    print("Pilihan ukuran tidak valid.")
+
+extra_cheese = input("Pakai Tambahan Keju (y/n): ").lower()
+while extra_cheese not in ["y", "n"]:
+    extra_cheese = input("Pakai Tambahan Keju (y/n): ").lower()
+if extra_cheese == "y":
+    total_harga += 13_636
+    extra_cheese = True
+elif extra_cheese == "n":
+    extra_cheese = False
+
+print("\nTerima Kasih telah membeli Pizza di Pizza Hut")
+print(f"Pesanan Anda Pizza dengan Topping {topping_pizza}")
+print(f"Crust/Pinggiran {crust_pizza} dan")
+print(f"Pilihan Size {size_choice}")
+print(f"{'dengan' if extra_cheese else 'tanpa'} Tambahan Keju")
+print(f"Total Harga: Rp {total_harga}")
