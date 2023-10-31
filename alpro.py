@@ -32,3 +32,33 @@ elif topping_pizza == 3:
     topping_pizza = "Super Supreme"
 elif topping_pizza == 4:
     topping_pizza = "Super Supreme Chicken"
+
+#Menampilkan Pilihan Crust
+print(
+    """
+    1. Pan
+    2. StuffedCrust Cheese
+    3. StuffedCrust Sausage
+    4. Cheesy Bites
+    5. Crown Crust
+    """
+)
+
+#Memilih Tipe Crust Pizza
+crust_pizza = int(input("Pilih Crust/Tepian Pizza: "))
+if crust_pizza == 1:
+    crust_pizza = "Pan"
+    total_harga = 43_637
+elif crust_pizza == 2:
+    crust_pizza = "StuffedCrust Cheese"
+    total_harga = 55_455
+elif crust_pizza == 3:
+    crust_pizza = "StuffedCrust Sausage"
+    total_harga = 52_728
+elif crust_pizza == 4:
+    crust_pizza = "Cheesy Bites"
+    total_harga = 57_273
+elif crust_pizza == 5:
+    crust_pizza = "Crown Crust"
+    total_harga = 55_455
+
