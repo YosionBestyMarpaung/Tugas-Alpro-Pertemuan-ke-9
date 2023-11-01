@@ -34,65 +34,77 @@ elif topping_pizza == 4:
     topping_pizza = "Super Supreme Chicken"
 else:
     print("Pilihan ukuran tidak valid.")
-
-#Menampilkan Pilihan Crust
+    
+#Menampilkan Pilihan Crust dan Pilihan Ukuran
 print(
     """
-    Pilihan Crust:
+    Pilihan Crust :
     1. Pan
     2. StuffedCrust Cheese
     3. StuffedCrust Sausage
     4. Cheesy Bites
     5. Crown Crust
-    """)
 
-#Memilih Tipe Crust Pizza
-crust_pizza = int(input("Pilih Crust/Tepian Pizza: "))
-if crust_pizza == 1:
-    crust_pizza = "Pan"
-    total_harga = 43_637
-elif crust_pizza == 2:
-    crust_pizza = "StuffedCrust Cheese"
-    total_harga = 55_455
-elif crust_pizza == 3:
-    crust_pizza = "StuffedCrust Sausage"
-    total_harga = 52_728
-elif crust_pizza == 4:
-    crust_pizza = "Cheesy Bites"
-    total_harga = 57_273
-elif crust_pizza == 5:
-    crust_pizza = "Crown Crust"
-    total_harga = 55_455
-else:
-    print("Pilihan ukuran tidak valid.")
-    
-# Meminta ukuran pizza
-print(
-    """
-    Ukuran Pizza :
+    Pilihan Ukuran :
     1. Personal
     2. Reguler
     3. Large
-    """)
+    """
+)
 
-size_choice = int(input("Pilih ukuran pizza yang diinginkan: "))
-
-# Memeriksa pilihan ukuran pizza
-if size_choice == 1:
-    size = "Personal"
-    harga_size = 0
+#Memilih Crust dan Memilih Ukuran
+crust_pizza = int(input("Pilih Crust/Tepian Pizza dan Ukuran Pizza: "))
+if crust_pizza == 1:
+    crust_pizza = "Pan"
     total_harga += 0
-elif size_choice == 2:
-    size = "Reguler"
-    harga_size = 57_273
-    total_harga += 57_273
-elif size_choice == 3:
-    size = "Large"
-    harga_size = 89_091
-    total_harga += 89_091
-else:
-    print("Pilihan ukuran tidak valid.")
-
+    size_pizza = int(input("Pilih Ukuran Pizza :"))
+    if size_pizza == 1:
+      total_harga += 0
+    elif size_pizza == 2:
+      total_harga += 57_273
+    elif size_pizza == 3:
+      total_harga += 89_091
+elif crust_pizza == 2:
+    crust_pizza = "StuffedCrust Cheese"
+    total_harga += 11_818
+    size_pizza = int(input("Pilih Ukuran Pizza :"))
+    if size_pizza == 1:
+      total_harga += 0
+    elif size_pizza == 2:
+      total_harga += 65_455
+    elif size_pizza == 3:
+      total_harga += 104_545
+elif crust_pizza == 3:
+    crust_pizza = "StuffedCrust Sausage"
+    total_harga += 9_091
+    size_pizza = int(input("Pilih Ukuran Pizza :"))
+    if size_pizza == 1:
+      total_harga += 0
+    elif size_pizza == 2:
+      total_harga += 64_545
+    elif size_pizza == 3:
+      total_harga += 102_727
+elif crust_pizza == 4:
+    crust_pizza = "Cheesy Bites"
+    total_harga += 13_636
+    size_pizza = int(input("Pilih Ukuran Pizza :"))
+    if size_pizza == 1:
+      total_harga += 0
+    elif size_pizza == 2:
+      total_harga += 66_364
+    elif size_pizza == 3:
+      total_harga += 107_273
+elif crust_pizza == 5:
+    crust_pizza = "Crown Crust"
+    total_harga += 11_818
+    size_pizza = int(input("Pilih Ukuran Pizza :"))
+    if size_pizza == 1:
+      total_harga += 0
+    elif size_pizza == 2:
+      total_harga += 65_455
+    elif size_pizza == 3:
+      total_harga += 104_545
+    
 #Memilih Pake tambahan keju atau tidak
 extra_cheese = input("Pakai Tambahan Keju (y/n): ").lower()
 while extra_cheese not in ["y", "n"]:
