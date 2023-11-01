@@ -32,6 +32,8 @@ elif topping_pizza == 3:
     topping_pizza = "Super Supreme"
 elif topping_pizza == 4:
     topping_pizza = "Super Supreme Chicken"
+else:
+    print("Pilihan ukuran tidak valid.")
 
 #Menampilkan Pilihan Crust
 print(
@@ -61,7 +63,9 @@ elif crust_pizza == 4:
 elif crust_pizza == 5:
     crust_pizza = "Crown Crust"
     total_harga = 55_455
-
+else:
+    print("Pilihan ukuran tidak valid.")
+    
 # Meminta ukuran pizza
 print(
 """
@@ -89,6 +93,7 @@ elif size_choice == 3:
 else:
     print("Pilihan ukuran tidak valid.")
 
+#Memilih Pake tambahan keju atau tidak
 extra_cheese = input("Pakai Tambahan Keju (y/n): ").lower()
 while extra_cheese not in ["y", "n"]:
     extra_cheese = input("Pakai Tambahan Keju (y/n): ").lower()
@@ -98,6 +103,7 @@ if extra_cheese == "y":
 elif extra_cheese == "n":
     extra_cheese = False
 
+#Memunculkan Hasil Pemesanan
 print("\nTerima Kasih telah membeli Pizza di Pizza Hut")
 print(f"Pesanan Anda Pizza dengan Topping {topping_pizza}")
 print(f"Crust/Pinggiran {crust_pizza} dan")
