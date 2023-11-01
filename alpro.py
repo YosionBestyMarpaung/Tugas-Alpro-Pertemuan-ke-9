@@ -19,8 +19,7 @@ print(
     2. Meat Monsta
     3. Super Supreme
     4. Super Supreme Chicken
-    """
-)
+    """)
 
 #Memilih Topping Pizza yang ingin dimakan
 topping_pizza = int(input("Pilih Topping Pizza: "))
@@ -41,8 +40,7 @@ print(
     3. StuffedCrust Sausage
     4. Cheesy Bites
     5. Crown Crust
-    """
-)
+    """)
 
 #Memilih Tipe Crust Pizza
 crust_pizza = int(input("Pilih Crust/Tepian Pizza: "))
@@ -63,11 +61,15 @@ elif crust_pizza == 5:
     total_harga = 55_455
 
 # Meminta ukuran pizza
-print("Pilih ukuran pizza:")
-print("1. Personal")
-print("2. Medium")
-print("3. Large")
-size_choice = int(input("Pilih nomor ukuran pizza yang diinginkan: "))
+print(
+"""
+Ukuran Pizza :
+1. Personal
+2. Medium
+3. Large
+""")
+
+size_choice = int(input("Pilih ukuran pizza yang diinginkan: "))
 
 # Memeriksa pilihan ukuran pizza
 if size_choice == 1:
