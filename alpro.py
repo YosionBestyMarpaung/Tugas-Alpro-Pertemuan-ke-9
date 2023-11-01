@@ -68,12 +68,12 @@ else:
     
 # Meminta ukuran pizza
 print(
-"""
-Ukuran Pizza :
-1. Personal
-2. Medium
-3. Large
-""")
+    """
+    Ukuran Pizza :
+    1. Personal
+    2. Medium
+    3. Large
+    """)
 
 size_choice = int(input("Pilih ukuran pizza yang diinginkan: "))
 
