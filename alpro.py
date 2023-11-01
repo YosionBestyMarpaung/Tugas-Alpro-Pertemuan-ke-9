@@ -15,6 +15,7 @@ total_harga = 0
 #Menampilkan Menu
 print(
     """
+    Topping Pizza :
     1. Frankfurter BBQ
     2. Meat Monsta
     3. Super Supreme
@@ -35,6 +36,7 @@ elif topping_pizza == 4:
 #Menampilkan Pilihan Crust
 print(
     """
+    Pilihan Crust:
     1. Pan
     2. StuffedCrust Cheese
     3. StuffedCrust Sausage
