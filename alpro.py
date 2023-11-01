@@ -105,17 +105,14 @@ elif crust_pizza == 5:
     elif size_pizza == 3:
       total_harga += 104_545
     
-#Memilih Pake tambahan keju atau tidak
-extra_cheese = input("Pakai Tambahan Keju (y/n): ").lower()
-while extra_cheese not in ["y", "n"]:
-    extra_cheese = input("Pakai Tambahan Keju (y/n): ").lower()
-if extra_cheese == "y":
+ extra_cheese = input("Tambah Keju y/n :")
+if extra_cheese == "y" and size_pizza == 1:
     total_harga += 13_636
-    extra_cheese = True
-elif extra_cheese == "n":
-    extra_cheese = False
+elif extra_cheese == "y" and size_pizza == 2:
+    total_harga += 16_364
+elif extra_cheese == "y" and size_pizza == 3:
+    total_harga += 19_091
 
-#Memunculkan Hasil Pemesanan
 print("\nTerima Kasih telah membeli Pizza di Pizza Hut")
 print(f"Pesanan Anda Pizza dengan Topping {topping_pizza}")
 print(f"Crust/Pinggiran {crust_pizza} dan")
