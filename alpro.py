@@ -119,6 +119,6 @@ elif extra_cheese == "n":
 print("\nTerima Kasih telah membeli Pizza di Pizza Hut")
 print(f"Pesanan Anda Pizza dengan Topping {topping_pizza}")
 print(f"Crust/Pinggiran {crust_pizza} dan")
-print(f"Pilihan Size {size_choice}")
+print(f"Pilihan Size {size_pizza}")
 print(f"{'dengan' if extra_cheese else 'tanpa'} Tambahan Keju")
 print(f"Total Harga: Rp {total_harga}")
