@@ -71,7 +71,7 @@ print(
     """
     Ukuran Pizza :
     1. Personal
-    2. Medium
+    2. Reguler
     3. Large
     """)
 
@@ -83,7 +83,7 @@ if size_choice == 1:
     harga_size = 0
     total_harga += 0
 elif size_choice == 2:
-    size = "Medium"
+    size = "Reguler"
     harga_size = 57_273
     total_harga += 57_273
 elif size_choice == 3:
